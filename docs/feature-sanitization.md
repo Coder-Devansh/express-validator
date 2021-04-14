@@ -27,8 +27,8 @@ app.post(
 );
 ```
 
-In the example above, we are validating `email` and `text` fields,
-so we may take advantage of the same chain to apply some sanitization,
+In the example above, we are validating `email` and `text` fields and
+may take advantage of the same chain to apply some sanitization,
 like e-mail normalization (`normalizeEmail`) and trimming (`trim`)/HTML escaping (`escape`).  
 The `notifyOnReply` field isn't validated, but it can still make use of the same `check` function
 to convert it to a JavaScript boolean.
